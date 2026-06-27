@@ -1,13 +1,4 @@
-import {
-  Bell,
-  ChevronDown,
-  Filter,
-  Menu,
-  Plus,
-  Search,
-  Settings,
-  Sun,
-} from 'lucide-react';
+import { Bell, Filter, Menu, Plus, Search, Settings, Sun } from 'lucide-react';
 import React from 'react';
 
 interface HeaderProps {
@@ -30,9 +21,6 @@ const Header = ({ sideBarCollapsed, onToggleSidebar }: HeaderProps) => {
             <h1 className="text-2xl font-black text-slate-800 dark:text-white">
               Dashboard
             </h1>
-            <p className="dark:text-white">
-              Welcome back, Alex! Here's what's happening today
-            </p>
           </div>
 
           <div className="flex-1 max-w-md mx-8">
@@ -74,13 +62,12 @@ const Header = ({ sideBarCollapsed, onToggleSidebar }: HeaderProps) => {
               />
               <div className="hidden md:block">
                 <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
-                  Alex Johnson
+                  Alex
                 </p>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
                   Administrator
                 </p>
               </div>
-              <ChevronDown className="w-4 h-4 text-slate-400" />
             </div>
           </div>
         </div>

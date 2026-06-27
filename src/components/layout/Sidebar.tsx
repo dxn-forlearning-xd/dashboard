@@ -19,7 +19,6 @@ const menuItems = [
     id: 'dashboard',
     icon: LayoutDashboard,
     label: 'Dashboard',
-    active: true,
     badge: 'New',
   },
   {
