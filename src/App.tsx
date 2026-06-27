@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Header from './components/Layout/Header';
-import Sidebar from './components/Layout/Sidebar';
+import Header from './components/layout/Header';
+import Sidebar from './components/layout/Sidebar';
 import Dashboard from './components/Dassboard/Dashboard';
 
 const App = () => {
