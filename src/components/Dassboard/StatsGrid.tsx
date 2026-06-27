@@ -1,13 +1,11 @@
 import {
   ArrowDownRight,
-  ArrowRight,
   ArrowUpRight,
   DollarSign,
   Eye,
   ShoppingCart,
   Users,
 } from 'lucide-react';
-import React from 'react';
 const stats = [
   {
     title: 'Total Revenue',

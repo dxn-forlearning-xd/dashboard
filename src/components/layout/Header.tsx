@@ -1,12 +1,11 @@
 import { Bell, Filter, Menu, Plus, Search, Settings, Sun } from 'lucide-react';
-import React from 'react';
 
 interface HeaderProps {
   sideBarCollapsed: boolean;
   onToggleSidebar: () => void;
 }
 
-const Header = ({ sideBarCollapsed, onToggleSidebar }: HeaderProps) => {
+const Header = ({ onToggleSidebar }: HeaderProps) => {
   return (
     <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-700/50 px-6 py-4">
       <div className="flex items-center justify-between">

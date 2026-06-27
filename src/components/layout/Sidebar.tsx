@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
   BarChart3,
   Calendar,
@@ -92,13 +92,13 @@ interface SidebarProps {
 }
 const Sidebar = ({
   collapsed,
-  onToggle,
+
   currentPage,
   onPageChange,
 }: SidebarProps) => {
   const [expandedItems, setExpandedItems] = useState(new Set(['analytics']));
 
-  const toggleExpanded = (itemId) => {
+  const toggleExpanded = (itemId: string) => {
     const newExpanded = new Set(expandedItems);
     if (newExpanded.has(itemId)) {
       newExpanded.delete(itemId);
@@ -135,7 +135,7 @@ const Sidebar = ({
               <div key={item.id}>
                 <button
                   className={`w-full flex items-center justify-between p-3 rounded-xl transition-all duration-200 ${
-                    currentPage === item.id || item.active
+                    currentPage === item.id
                       ? 'bg-linear-to-r from-blue-500 to-purple-600 text-white shadow-lg shadow-blue-500/25'
                       : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/50'
                   }`}
