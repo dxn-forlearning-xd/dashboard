@@ -120,11 +120,8 @@ const Sidebar = ({
             {!collapsed && (
               <div>
                 <h1 className="text-xl font-bold text-slate-800 dark:text-white">
-                  Nexus
-                </h1>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
                   Admin Panel
-                </p>
+                </h1>
               </div>
             )}
           </div>
@@ -154,12 +151,12 @@ const Sidebar = ({
                         <span className="font-medium ml-2 dark:text-white">
                           {item.label}
                           {item.badge && (
-                            <span className="px-2 py-1 text-xs bg-red-500 text-white rounded-full">
+                            <span className="px-2 py-1 ml-2 text-xs bg-red-500 text-white rounded-full">
                               {item.badge}
                             </span>
                           )}
                           {item.count && (
-                            <span className="px-2 py-1 text-xs bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full">
+                            <span className="px-2 py-1 ml-2 text-xs bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full">
                               {item.count}
                             </span>
                           )}
